@@ -32,12 +32,12 @@ When these datatypes are combined, we get a **data structure**, for example, an 
 
 Suppose you are tasked with creating some software, and it is up to **you** to determine which datatypes and what data structure to use.  For each of the following, write which **data types** you would use to represent the data, and then give a small example of the **data structure**:
 
-  * A light switch that can be either on or off.
-  * A user's email address.
-  * A spaceship with a hull, laser blasters, tractor beam, and warp drive.
-  * A list of student names from our class.
-  * A list of student names from our class, each with a location.
-  * A list of student names from our class, each with a location and each with a list of favorite tv shows.
+  a.* A light switch that can be either on or off.
+  b.* A user's email address.
+  c.* A spaceship with a hull, laser blasters, tractor beam, and warp drive.
+  d.* A list of student names from our class.
+  e.* A list of student names from our class, each with a location.
+  f.* A list of student names from our class, each with a location and each with a list of favorite tv shows.
 
 ---
 
@@ -174,7 +174,12 @@ const bondFilms = [
   { "title" : "License to Kill", "year" : 1989, "actor" : "Timothy Dalton", "gross" : "$285,157,191" }
 ];
 ```
-
+let grossAllBondFilms = 0;
+console.log(grossAllBondFilms);
+for (let i = 0; i < bondFilms.length; i++) {
+  grossAllBondFilms += parseInt(bondFilms[i].gross.replace(/[,$]/g, ''));
+}
+console.log(grossAllBondFilms);
 
 5. Create a new array called `bondTitles` with only the titles of the Bond films, and console.log the new array.
 
