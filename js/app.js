@@ -14,6 +14,30 @@
 // //d. array
 // //  const studentNames = ["calvin", "veda", "joe", "shadi"];
 //  //e.
+//const studentLocations = [
+  // {"Calvin": "Denver"
+  // }, {
+  //   "Veda": "Fort Collins"
+  // }, {
+  //   "Joe": "Pittsburg"
+  // }, {
+  //   "Shadi": "Vietnam"
+  // }];
+//f.)
+// const studentFavs = [
+//   {"Calvin": "Denver",
+//     shows: ["Seinfeld", "South Park", "Rick & Morty"]
+// }, {
+//   "Veda": "Fort Collins",
+//     shows: ["The Apprentice", "Survivor", "A Series of Unfortunate Events"]
+// }, {
+//   "Joe": "Pittsburg",
+//     shows: ["Football", "Baseball", "The Sopranos"]
+// }, {
+//   "Shadi": "Vietnam",
+//     shows: ["The Wire", "Rock of Love Featuring Brett Michaels"]
+// }];
+
 //5.
 
 // ### 2. Take it Easy
@@ -76,7 +100,7 @@ const crazyObject = {
       },
     ]
   }
-}
+};
 
 // Use crazyObject to log the following.
 console.log(crazyObject.larry.quotes[3]);
@@ -154,9 +178,9 @@ const bondFilms = [
   { "title" : "A View to a Kill", "year" : 1985, "actor" : "Roger Moore", "gross" : "$321,172,633" },
   { "title" : "License to Kill", "year" : 1989, "actor" : "Timothy Dalton", "gross" : "$285,157,191" }
 ];
-const bondTitles = []
-  for ( let i = 0; 1 < bondFilms.length; i++) {
-   bondFilms.push(i)
+let bondTitles = [];
+  for( i = 0; 1 < bondFilms.length; i++) {
+   bondFilms.push(["title"]);
   }
   console.log(bondTitles);
 
@@ -185,13 +209,14 @@ const bondTitles = []
 //     { "title" : "The Living Daylights", "year" : 1987, "actor" : "Timothy Dalton", "gross" : "$381,088,866" },
 //     { "title" : "A View to a Kill", "year" : 1985, "actor" : "Roger Moore", "gross" : "$321,172,633" },
 //     { "title" : "License to Kill", "year" : 1989, "actor" : "Timothy Dalton", "gross" : "$285,157,191" }
-  ];
-  const oddBonds =[]
-  for(i = 0; i < bondFilms.length; i++) {
-    if ( i % 2 !== 0) {
-      bondFilms.push([i].oddBonds)
-    }
-
+  //];
+//   const oddBonds =[];
+//   for(i = 0; i < bondFilms.length; i++) {
+//     if ( i % 2 !== 0) {
+//       bondFilms.push([i].oddBonds);
+//     }
+//   }
+// console.log(oddBonds);
 
 
 // // //  //7.
@@ -221,10 +246,10 @@ const bondTitles = []
 // //     { "title" : "License to Kill", "year" : 1989, "actor" : "Timothy Dalton", "gross" : "$285,157,191" }
 // //   ];
  
-// //   let grossAllBondFilms = 0;
-// // console.log(grossAllBondFilms);
-// // for (let i = 0; i < bondFilms.length; i++) {
-// //  grossAllBondFilms += parseInt(bondFilms[i].gross.replace(/[,$]/g, ‘’));
-// // }
-// // console.log(grossAllBondFilms);
-// //   }  
+//   let grossAllBondFilms = 0;
+// console.log(grossAllBondFilms);
+// for (let i = 0; i < bondFilms.length; i++) {
+//  grossAllBondFilms += parseInt(bondFilms[i].gross.replace(/[,$]/g, '’))
+// }
+//  
+// console.log(grossAllBondFilms);
